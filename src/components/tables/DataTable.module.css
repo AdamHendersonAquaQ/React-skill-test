@@ -1,0 +1,95 @@
+.panel {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(90deg, var(--stone-dark) 0%, var(--stone-mid) 100%);
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 5px 8px;
+}
+
+.scrollWrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrollWrap::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollWrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollWrap::-webkit-scrollbar-thumb {
+  background: var(--stone-light);
+  border-radius: 3px;
+}
+
+.scrollWrap::-webkit-scrollbar-thumb:hover {
+  background: var(--stone);
+}
+
+.table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: collapse;
+  font-size: 10.5px;
+  white-space: nowrap;
+}
+
+.table thead tr {
+  background: var(--stone-mid);
+}
+
+.table thead th {
+  color: #fff;
+  font-weight: 600;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 3px 7px;
+  text-align: right;
+}
+
+.table thead th:first-child {
+  text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #f7f2ec;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #fff;
+}
+
+.table tbody td {
+  padding: 3px 7px;
+  color: var(--text-dark);
+  text-align: right;
+}
+
+.table tbody td:first-child {
+  text-align: left;
+}
+
+/* Shared sentiment classes — imported by tableCells.tsx */
+.pos {
+  color: #16803c;
+  font-weight: 600;
+}
+
+.neg {
+  color: var(--red);
+  font-weight: 600;
+}

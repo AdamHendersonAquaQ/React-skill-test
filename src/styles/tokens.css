@@ -1,0 +1,16 @@
+:root {
+  --stone: #ae29fb;
+  --stone-dark: #ae296f;
+  --stone-mid: #c040e8;
+  --stone-light: #d880f8;
+  --stone-pale: #f5e8ff;
+  --lemon: #ffb100;
+  --turquoise: #1fae94;
+  --white: #ffffff;
+  --green: #22c55e;
+  --red: #ef4444;
+  --amber: #f59e0b;
+  --text-dark: #2a083a;
+  --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.22), 0 1px 4px rgba(0, 0, 0, 0.14);
+  --shadow-centre: 0 6px 24px rgba(0, 0, 0, 0.28), 0 2px 8px rgba(0, 0, 0, 0.18);
+}
