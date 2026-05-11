@@ -7,6 +7,11 @@
 node_modules/
 dist/
 
+# TypeScript build artifacts
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
 # Compiled Java class files
 *.class
 
@@ -21,7 +26,6 @@ dist/
 
 # Maven
 target/
-dist/
 
 # JetBrains IDE
 .idea/
@@ -48,3 +52,7 @@ Thumbs.db
 *.mov
 *.wmv
 
+# Environment files
+.env
+.env.local
+.env.*.local

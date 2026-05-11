@@ -1,0 +1,39 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.kpiRow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.state {
+  padding: 40px;
+  text-align: center;
+  color: var(--stone);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .kpiRow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .kpiRow {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+  }
+
+  .kpiRow > :nth-child(-n + 3) {
+    grid-column: span 2;
+  }
+
+  .kpiRow > :nth-child(n + 4) {
+    grid-column: span 3;
+  }
+}

@@ -1,0 +1,115 @@
+.banner {
+  background: linear-gradient(135deg, #ae296f 0%, #ae29fb 100%);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 220px 1fr 360px;
+  align-items: center;
+  padding: 0 20px;
+  height: 68px;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 12px rgba(90, 13, 122, 0.4);
+}
+
+.company {
+  font-family: 'Bebas Neue', 'Anton', Impact, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.centre {
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Bebas Neue', 'Anton', Impact, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 7px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.logoMain {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.logoAccent {
+  color: #ffb100;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.selectors {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.select {
+  background: #c040e8;
+  color: #fff;
+  border: 1px solid #d880f8;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 11px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.select:focus {
+  outline: 2px solid #d880f8;
+  outline-offset: 1px;
+}
+
+.keystats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px 10px;
+  font-size: 10px;
+  color: #fff;
+  opacity: 0.92;
+  border-left: 1px solid #d880f8;
+  padding-left: 12px;
+}
+
+.ksItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.ksLabel {
+  color: #d880f8;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.ksValue {
+  font-weight: 600;
+  font-size: 11px;
+}
+
+@media (max-width: 640px) {
+  .banner {
+    grid-template-columns: 1fr auto;
+    height: auto;
+    padding: 10px 14px;
+  }
+
+  .centre {
+    display: none;
+  }
+
+  .keystats {
+    display: none;
+  }
+}
