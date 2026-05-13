@@ -1,0 +1,22 @@
+.monthCell {
+  text-align: left;
+  font-weight: var(--font-semibold);
+  color: var(--color-text);
+}
+
+.projectedRow {
+  opacity: 0.65;
+  font-style: italic;
+}
+
+.totalRow td {
+  font-weight: var(--font-extrabold);
+  border-top: 2px solid var(--color-primary-light);
+  background: var(--color-surface-alt);
+  text-align: right;
+  padding: 3px 7px;
+}
+
+.totalRow td:first-child {
+  text-align: left;
+}
