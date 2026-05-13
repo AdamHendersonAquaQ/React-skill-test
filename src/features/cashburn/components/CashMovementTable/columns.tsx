@@ -1,4 +1,5 @@
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
+import { clsx } from 'clsx';
 import { NumericCell } from '../../../../components/tables/tableCells';
 import type { CashMovementRow } from '../../api/schemas';
 import styles from './CashMovementTable.module.css';
@@ -11,7 +12,7 @@ export const cashMovementColumns = ([
   h.accessor('month', {
     header: 'Month',
     cell: ({ getValue, row }) => (
-      <span className={styles['monthCell'] ?? ''}>
+      <span className={clsx(styles.monthCell)}>
         {getValue()}
         {row.original.isProjected && <sup> ⁽ᵖ⁾</sup>}
       </span>

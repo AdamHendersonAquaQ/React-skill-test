@@ -7,14 +7,14 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
-  margin-bottom: 8px;
+  margin-bottom: var(--space-2);
 }
 
-.state {
+.statusMessage {
   padding: 40px;
   text-align: center;
-  color: var(--stone);
-  font-weight: 600;
+  color: var(--color-primary);
+  font-weight: var(--font-semibold);
 }
 
 @media (max-width: 900px) {
@@ -26,7 +26,7 @@
 @media (max-width: 640px) {
   .kpiRow {
     grid-template-columns: repeat(6, 1fr);
-    gap: 6px;
+    gap: var(--space-1+2, 6px);
   }
 
   .kpiRow > :nth-child(-n + 3) {

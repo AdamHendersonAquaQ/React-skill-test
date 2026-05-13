@@ -51,9 +51,9 @@ export function LineChartPanel({
   const topMargin = annotations.length > 0 ? 32 : 8;
 
   return (
-    <div className={styles['panel']}>
-      <h2 className={styles['title']}>{title}</h2>
-      {subtitle && <p className={styles['subtitle']}>{subtitle}</p>}
+    <div className={styles.panel}>
+      <h2 className={styles.title}>{title}</h2>
+      {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
       <ResponsiveContainer width="100%" height={220}>
         <ComposedChart data={data} margin={{ top: topMargin, right: 16, left: 0, bottom: 4 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,0,0,0.08)" />

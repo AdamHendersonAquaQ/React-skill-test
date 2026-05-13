@@ -1,12 +1,12 @@
 .banner {
-  background: linear-gradient(135deg, #ae296f 0%, #ae29fb 100%);
-  color: #fff;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  color: var(--color-surface);
   display: grid;
   grid-template-columns: 220px 1fr 360px;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 var(--space-5);
   height: 68px;
-  gap: 12px;
+  gap: var(--space-3);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -16,100 +16,100 @@
 .company {
   font-family: 'Bebas Neue', 'Anton', Impact, sans-serif;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: var(--font-regular);
   letter-spacing: 2px;
 }
 
-.centre {
+.logoCenter {
   text-align: center;
 }
 
 .logo {
   font-family: 'Bebas Neue', 'Anton', Impact, sans-serif;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: var(--font-regular);
   letter-spacing: 7px;
   line-height: 1;
   text-transform: uppercase;
 }
 
-.logoMain {
+.logoText {
   color: rgba(255, 255, 255, 0.88);
 }
 
-.logoAccent {
-  color: #ffb100;
+.logoHighlight {
+  color: var(--color-accent);
 }
 
 .right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 8px;
+  gap: var(--space-2);
 }
 
 .selectors {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--space-1);
 }
 
 .select {
-  background: #c040e8;
-  color: #fff;
-  border: 1px solid #d880f8;
-  border-radius: 4px;
-  padding: 2px 6px;
-  font-size: 11px;
+  background: var(--color-primary-mid);
+  color: var(--color-surface);
+  border: 1px solid var(--color-primary-light);
+  border-radius: var(--radius-sm);
+  padding: 2px var(--space-1+2, 6px);
+  font-size: var(--text-sm);
   cursor: pointer;
   font-family: inherit;
 }
 
 .select:focus {
-  outline: 2px solid #d880f8;
+  outline: 2px solid var(--color-primary-light);
   outline-offset: 1px;
 }
 
-.keystats {
+.keyStats {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1px 10px;
-  font-size: 10px;
-  color: #fff;
+  font-size: var(--text-sm);
+  color: var(--color-surface);
   opacity: 0.92;
-  border-left: 1px solid #d880f8;
-  padding-left: 12px;
+  border-left: 1px solid var(--color-primary-light);
+  padding-left: var(--space-3);
 }
 
-.ksItem {
+.keyStatItem {
   display: flex;
   flex-direction: column;
 }
 
-.ksLabel {
-  color: #d880f8;
-  font-size: 9px;
+.keyStatLabel {
+  color: var(--color-primary-light);
+  font-size: var(--text-xs);
   text-transform: uppercase;
   letter-spacing: 0.3px;
 }
 
-.ksValue {
-  font-weight: 600;
-  font-size: 11px;
+.keyStatValue {
+  font-weight: var(--font-semibold);
+  font-size: var(--text-sm);
 }
 
 @media (max-width: 640px) {
   .banner {
     grid-template-columns: 1fr auto;
     height: auto;
-    padding: 10px 14px;
+    padding: var(--space-2+2, 10px) var(--space-3+2, 14px);
   }
 
-  .centre {
+  .logoCenter {
     display: none;
   }
 
-  .keystats {
+  .keyStats {
     display: none;
   }
 }

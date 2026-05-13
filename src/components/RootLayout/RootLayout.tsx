@@ -4,9 +4,9 @@ import styles from './RootLayout.module.css';
 
 export function RootLayout() {
   return (
-    <div className={styles['shell']}>
+    <div className={styles.shell}>
       <TopBar />
-      <main className={styles['main']}>
+      <main className={styles.main}>
         <Outlet />
       </main>
     </div>

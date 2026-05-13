@@ -1,3 +1,4 @@
+import { clsx } from 'clsx';
 import styles from './DataTable.module.css';
 
 export function formatCurrency(value: number): string {
@@ -12,6 +13,9 @@ type NumericCellProps = {
 };
 
 export function NumericCell({ value, format = formatCurrency }: NumericCellProps) {
-  const cls = value > 0 ? (styles['pos'] ?? '') : value < 0 ? (styles['neg'] ?? '') : '';
-  return <span className={cls}>{format(value)}</span>;
+  return (
+    <span className={clsx(value > 0 && styles.positive, value < 0 && styles.negative)}>
+      {format(value)}
+    </span>
+  );
 }

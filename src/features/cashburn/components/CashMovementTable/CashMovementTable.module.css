@@ -1,18 +1,18 @@
 .monthCell {
   text-align: left;
-  font-weight: 600;
-  color: var(--text-dark);
+  font-weight: var(--font-semibold);
+  color: var(--color-text);
 }
 
-.projected {
+.projectedRow {
   opacity: 0.65;
   font-style: italic;
 }
 
 .totalRow td {
-  font-weight: 800;
-  border-top: 2px solid var(--stone-light);
-  background: #f7f2ec;
+  font-weight: var(--font-extrabold);
+  border-top: 2px solid var(--color-primary-light);
+  background: var(--color-surface-alt);
   text-align: right;
   padding: 3px 7px;
 }

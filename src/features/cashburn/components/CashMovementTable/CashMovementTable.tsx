@@ -1,3 +1,4 @@
+import { clsx } from 'clsx';
 import { DataTable } from '../../../../components/tables/DataTable';
 import { NumericCell, formatCurrency } from '../../../../components/tables/tableCells';
 import type { CashMovementRow } from '../../api/schemas';
@@ -21,7 +22,7 @@ const TOTALS = {
 function TotalsFooter() {
   return (
     <tfoot>
-      <tr className={styles['totalRow'] ?? ''}>
+      <tr className={styles.totalRow}>
         <td>Total</td>
         <td>—</td>
         <td><NumericCell value={TOTALS.salesRevenue} /></td>
@@ -43,7 +44,7 @@ export function CashMovementTable({ rows }: Props) {
       data={rows}
       columns={cashMovementColumns}
       title="Monthly Cash Movement"
-      getRowClassName={(row) => row.original.isProjected ? (styles['projected'] ?? '') : ''}
+      getRowClassName={(row) => clsx(row.original.isProjected && styles.projectedRow)}
       footer={<TotalsFooter />}
     />
   );

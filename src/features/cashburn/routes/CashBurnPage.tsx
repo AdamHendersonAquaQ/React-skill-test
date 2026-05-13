@@ -8,11 +8,11 @@ export function CashBurnPage() {
   const { kpis, chartData, tableRows, isLoading, isError } = useCashBurnData();
 
   if (isLoading) {
-    return <div className={styles.state}>Loading…</div>;
+    return <div className={styles.statusMessage}>Loading…</div>;
   }
 
   if (isError) {
-    return <div className={styles.state}>Failed to load cash burn data.</div>;
+    return <div className={styles.statusMessage}>Failed to load cash burn data.</div>;
   }
 
   return (

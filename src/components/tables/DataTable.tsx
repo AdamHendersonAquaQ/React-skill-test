@@ -30,10 +30,10 @@ export function DataTable<T extends object>({
   });
 
   return (
-    <div className={styles['panel']}>
-      {title && <div className={styles['header']}>{title}</div>}
-      <div className={styles['scrollWrap']}>
-        <table className={styles['table']}>
+    <div className={styles.panel}>
+      {title && <div className={styles.panelHeader}>{title}</div>}
+      <div className={styles.tableScroll}>
+        <table className={styles.table}>
           <thead>
             {table.getHeaderGroups().map((hg) => (
               <tr key={hg.id}>
